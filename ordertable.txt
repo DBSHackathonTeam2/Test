@@ -1,0 +1,17 @@
+CREATE TABLE order_table
+(
+cust_id int,
+Order_id int NOt Null,
+Stock_Name varchar(255),
+Order_qty int(255),
+Order_type varchar(255),
+Executed_qty int(255),
+price int(255),
+Orderstatus varchar(255),
+Order_date date,
+Primary key (order_id),
+Foreign key (cust_id)
+);
+insert into order_table values(1,'DBS',50,'Limit',0,150,'PLACED','21-02-2021');
+insert into order_table values(2,'DBS',50,'Market',0,,'PLACED','21-02-2021');
+insert into order_table values(3,'DBS',50,'Limit',0,140,'PLACED','21-02-2021');
